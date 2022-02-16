@@ -2,4 +2,5 @@
 
 Solving brimore round 2 contest:
 
-https://codeforces.com/gym/349178/problem/A
+Problem A : https://codeforces.com/gym/349178/problem/A (using python)
+Problem B : 
