@@ -1,19 +1,54 @@
 package google_practice_kickstart_2022;
 
+import java.util.Arrays;
 import java.util.HashSet;
+import java.util.LinkedList;
 import java.util.Scanner;
 
 public class Milk_Tea {
 
-    private static String findInitialSolution(int[] count,int N){
-        StringBuilder result = new StringBuilder(100);
-        for(int i = 0 ; i < count.length ; i++){
-            if((double)count[i] >= (double)N/2)
-                result.append("1");
-            else
-                result.append("0");
+    private static HashSet<String> forbidden;
+    private static String[] customers;
+    private static int[] count;
+    private static int[] conflicts;
+    private static String bestOrder;
+
+    private static void initializeConflicts(){
+        StringBuilder order = new StringBuilder(100);
+        conflicts = new int[count.length];
+        for(int i = 0 ; i < conflicts.length ; i++) {
+            if((double)count[i]>=(double)customers.length/2){
+                order.append("1");
+                conflicts[i] = customers.length - count[i];
+            }else{
+                order.append("0");
+                conflicts[i] = count[i];
+            }
         }
-        return result.toString();
+        bestOrder = order.toString();
+    }
+
+    private static int getScore(int relaxations){
+        int sum = 0;
+        int[] relaxingConflicts = conflicts.clone();
+        Arrays.sort(relaxingConflicts);
+        for(int i = relaxingConflicts.length-1;i >=0 ; i--){
+            if(relaxations>0){
+                sum+=customers.length-relaxingConflicts[i];
+                relaxations--;
+            }else
+                sum+=relaxingConflicts[i];
+        }
+        return sum;
+    }
+
+    private static LinkedList<String> getPossibleMatches(int relaxations){
+
+        return null;
+    }
+
+    private static boolean checkValidity(LinkedList<String> order){
+        return false;
     }
 
     public static void main(String[] args){
@@ -23,13 +58,13 @@ public class Milk_Tea {
             int N = sc.nextInt();
             int M = sc.nextInt();
             int P = sc.nextInt();
-            String[] customers = new String[N];
+            customers = new String[N];
             for (int i = 0 ; i < N ; i++)
                 customers[i] = sc.next();
-            HashSet<String> forbidden = new HashSet(M);
+            forbidden = new HashSet(M);
             for (int i = 0 ; i < M ; i++)
                 forbidden.add(sc.next());
-            int[] count = new int[P];
+            count = new int[P];
             for(int i = 0 ; i < N ; i++) {
                 for (int j = 0; j < P; j++) {
                     if (customers[i].charAt(j) == '1') {
@@ -37,12 +72,19 @@ public class Milk_Tea {
                     }
                 }
             }
-            String initialSolution = findInitialSolution(count,N);
-            if (forbidden.contains(initialSolution))
-                System.out.println("NULL");
-            else
-                System.out.println(initialSolution);
+            initializeConflicts();
+            int relaxations = 0;
+            while(true){
+                int cost = getScore(relaxations);
+                LinkedList<String> possibleMatches = getPossibleMatches(relaxations);
+                boolean check = checkValidity(possibleMatches);
+                if(check) {
+                    System.out.println(cost);
+                    sc.close();
+                    return;
+                }
+                relaxations++;
+            }
         }
-        sc.close();
     }
 }
