@@ -2,8 +2,8 @@ package google_practice_kickstart_2022;
 
 import java.util.Arrays;
 import java.util.HashSet;
-import java.util.LinkedList;
 import java.util.Scanner;
+import java.util.Stack;
 
 public class Milk_Tea {
 
@@ -42,12 +42,103 @@ public class Milk_Tea {
         return sum;
     }
 
-    private static LinkedList<String> getPossibleMatches(int relaxations){
+    private static class Word{
+        String word;
+        int relaxations;
 
-        return null;
+        public Word(String word, int relaxations) {
+            this.word = word;
+            this.relaxations = relaxations;
+        }
+
+        @Override
+        public String toString() {
+            return "Word{" +
+                    "word='" + word + '\'' +
+                    ", relaxations=" + relaxations +
+                    '}';
+        }
     }
 
-    private static boolean checkValidity(LinkedList<String> order){
+    private static Word getPossibleMatches(int relaxations){
+        if(relaxations > 0) {
+            StringBuilder result = new StringBuilder(100);
+            int[] conflictsSorted = conflicts.clone();
+            Arrays.sort(conflictsSorted);
+            int modify = conflictsSorted[conflictsSorted.length-relaxations];
+            for(int i = 0 ; i < conflicts.length ; i++){
+                if(conflicts[i] < modify){
+                    result.append(bestOrder.charAt(i));
+                }else if (conflicts[i] > modify){
+                    char ch = bestOrder.charAt(i)=='0' ? '1':'0';
+                    result.append(ch);
+                    relaxations--;
+                }else
+                    result.append("x");
+            }
+            return new Word(result.toString(),relaxations);
+        }else return new Word(bestOrder,0);
+    }
+    private static int countX(String word){
+        int sum = 0;
+        for(int i = 0 ; i < word.length() ; i++)
+            if(word.charAt(i)=='x')
+                sum++;
+        return sum;
+    }
+    private static boolean checkValidity(Word order){
+        Stack<Word> stack = new Stack<>();
+        stack.push(order);
+        while(!stack.isEmpty()){
+            Word currentWord = stack.pop();
+            //Optimization
+            int count = countX(currentWord.word);
+            if(count<currentWord.relaxations)
+                continue;
+            else if(count == currentWord.relaxations){
+                StringBuilder currentOrder = new StringBuilder(100);
+                for(int i = 0 ; i < currentWord.word.length() ; i++){
+                    if(currentWord.word.charAt(i)=='x') {
+                        char ch = bestOrder.charAt(i)=='0' ? '1':'0';
+                        currentOrder.append(ch);
+                    }
+                    else {
+                        currentOrder.append(currentWord.word.charAt(i));
+                    }
+                }
+                if(forbidden.contains(currentOrder.toString()))
+                    continue;
+                else
+                    return true;
+            }
+            if(currentWord.relaxations == 0){
+                StringBuilder currentOrder = new StringBuilder(100);
+                for(int i = 0 ; i < currentWord.word.length() ; i++){
+                    if(currentWord.word.charAt(i)=='x')
+                        currentOrder.append(bestOrder.charAt(i));
+                    else
+                        currentOrder.append(currentWord.word.charAt(i));
+                }
+                if(!forbidden.contains(currentOrder.toString()))
+                    return true;
+            }else{
+                String currentOrder = currentWord.word;
+                for(int i = 0 ; i < currentOrder.length() ; i++){
+                    if(currentOrder.charAt(i)=='x'){
+                        StringBuilder newOrder = new StringBuilder(100);
+                        for(int j = 0 ; j < currentOrder.length() ; j++){
+                            if(i == j){
+                                char ch = bestOrder.charAt(i)=='0' ? '1':'0';
+                                newOrder.append(ch);
+                            }else{
+                                newOrder.append(currentOrder.charAt(j));
+                            }
+                        }
+                        stack.push(new Word(newOrder.toString(),currentWord.relaxations-1));
+                    }
+                }
+            }
+        }
         return false;
     }
 
@@ -61,7 +152,7 @@ public class Milk_Tea {
             customers = new String[N];
             for (int i = 0 ; i < N ; i++)
                 customers[i] = sc.next();
-            forbidden = new HashSet(M);
+            forbidden = new HashSet<>(M);
             for (int i = 0 ; i < M ; i++)
                 forbidden.add(sc.next());
             count = new int[P];
@@ -76,15 +167,15 @@ public class Milk_Tea {
             int relaxations = 0;
             while(true){
                 int cost = getScore(relaxations);
-                LinkedList<String> possibleMatches = getPossibleMatches(relaxations);
-                boolean check = checkValidity(possibleMatches);
-                if(check) {
-                    System.out.println(cost);
-                    sc.close();
-                    return;
+                Word possibleMatches = getPossibleMatches(relaxations);
+                boolean valid = checkValidity(possibleMatches);
+                if(valid) {
+                    System.out.println("Case #" + (t+1) + ": " + cost);
+                    break;
                 }
                 relaxations++;
             }
         }
+        sc.close();
     }
 }
