@@ -12,8 +12,8 @@ public class Brimore {
             numbers[i] = sc.nextInt();
         sc.close();
         Arrays.sort(numbers);
-        int[] results = new int[N-1];
-        int[] sums = new int[N];
+        long[] results = new long[N-1];
+        long[] sums = new long[N];
         int indexLeft = 1;
         int indexRight = N-2;
         results[0] = numbers[N-1]-numbers[0];
@@ -21,7 +21,13 @@ public class Brimore {
         sums[N-1] = numbers[N-1];
         boolean lefTurn = true;
         while(indexLeft<=indexRight){
-            
+            if(lefTurn){
+
+                indexLeft++;
+            }else{
+                
+                indexRight--;
+            }
         }
         for(int result : results)
             System.out.print(result + " ");
