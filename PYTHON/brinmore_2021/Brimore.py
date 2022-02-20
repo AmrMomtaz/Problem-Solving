@@ -24,8 +24,23 @@ def find_maximum_set(tup,index):
 
 
 
-n = int(input())
+'''n = int(input())
 numbers = [int(x) for x in input().split()]
+numbers.sort()
+results = list()
+for _ in range(n-1):
+    results.append(0)
+#results[0] = numbers[-1]-numbers[0]
+dynamic = dict()
+find_maximum_set(tuple(numbers),n-2)
+for result in results:
+    print(str(result)+' ' ,end='')'''
+
+import random
+
+n = 300000
+numbers = [random.randint(1,100000001) for _ in range(n)]
+print('BOOM')
 numbers.sort()
 results = list()
 for _ in range(n-1):
