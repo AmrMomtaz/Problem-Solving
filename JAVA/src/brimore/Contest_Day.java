@@ -3,8 +3,8 @@ package brimore;
 import java.io.*;
 
 public class Contest_Day {
+    
     static class BinaryIndexedTree{
-
         public static long getSum(int index,long[] BITree){
             long sum = 0;
             index = index + 1;
@@ -16,6 +16,10 @@ public class Contest_Day {
         }
 
         public static void updateBIT(int index,int val,long[] BITree){
+            if(index != 0)
+                val -= getSum(index, BITree) - getSum(index-1, BITree);
+            else
+                val -= getSum(index,BITree);
             index = index + 1;
             while(index <= BITree.length) {
                 BITree[index] += val;
@@ -30,25 +34,6 @@ public class Contest_Day {
             return BITree;
         }
 
-        // Main function
-        public static void main(String args[]){
-            int freq[] = {2, 1, 1, 3, 2, 3,
-                    4, 5, 6, 7, 8, 9};
-            long[] BITree = constructBITree(freq);
-
-            System.out.println("Sum of elements in arr[0..5]"+
-                    " is "+ getSum(5,BITree));
-
-            // Let use test the update operation
-            freq[3] += 6;
-
-            // Update BIT for above change in arr[]
-            updateBIT(3, 6,BITree);
-
-            // Find sum after the value is updated
-            System.out.println("Sum of elements in arr[0..5]"+
-                    " after update is " + getSum(5,BITree));
-        }
     }
     public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
