@@ -1,16 +1,17 @@
 package brimore;
 
+import java.io.*;
 import java.util.Arrays;
-import java.util.Scanner;
 
 public class Brimore {
-    public static void main(String[]args){
-        Scanner sc = new Scanner(System.in);
-        int N = sc.nextInt();
+    public static void main(String[]args) throws IOException {
+        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+        int N = Integer.parseInt(br.readLine());
         int[] numbers = new int[N];
+        String[] line = br.readLine().split(" ");
         for(int i = 0 ; i < N ; i++)
-            numbers[i] = sc.nextInt();
-        sc.close();
+            numbers[i] = Integer.parseInt(line[i]);
+        br.close();
         Arrays.sort(numbers);
         int lowest = numbers[0];
         for(int i = 0 ; i < N ; i++)
@@ -18,7 +19,8 @@ public class Brimore {
         int indexLeft = 0;
         int indexRight = N-1;
         long result = numbers[N-1]-numbers[0];
-        System.out.print(result + " ");
+        BufferedWriter log = new BufferedWriter(new OutputStreamWriter(System.out));
+        log.write(result + " ");
         long sumLeft = numbers[0];
         long sumsRight = numbers[N-1];
         boolean lefTurn = true;
@@ -32,7 +34,8 @@ public class Brimore {
                 sumsRight += numbers[--indexRight];
                 lefTurn = true;
             }
-            System.out.print(result + " ");
+            log.write(result + " ");
         }
+        log.close();
     }
 }

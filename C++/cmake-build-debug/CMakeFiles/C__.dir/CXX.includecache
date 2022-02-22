@@ -1,0 +1,14 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+C:/Users/20106/Documents/GitHub/Problem-Solving/C++/brimore_2021/Brimore.cpp
+iostream
+-
+bits/stdc++.h
+-
+
