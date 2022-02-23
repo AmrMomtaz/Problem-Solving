@@ -1,3 +1,0 @@
-C:/Users/20106/Documents/GitHub/Problem-Solving/C++/cmake-build-debug/CMakeFiles/edit_cache.dir
-C:/Users/20106/Documents/GitHub/Problem-Solving/C++/cmake-build-debug/CMakeFiles/C__.dir
-C:/Users/20106/Documents/GitHub/Problem-Solving/C++/cmake-build-debug/CMakeFiles/rebuild_cache.dir
