@@ -51,8 +51,8 @@ public class Contest_Day {
         BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
         String[] input = br.readLine().split(" ");
         int N = Integer.parseInt(input[0]);
-        long[] arr = new long[N];
         int Q = Integer.parseInt(input[1]);
+        long[] arr = new long[N];
         input = br.readLine().split(" ");
         for (int i = 0; i < N; i++)
             arr[i] = Long.parseLong(input[i]);
@@ -76,7 +76,7 @@ public class Contest_Day {
                     if (s == 0)
                         bw.write(FenwickTree.getSum(e, BITree) + "\n");
                     else
-                        bw.write((FenwickTree.getSum(e, BITree).subtract(FenwickTree.getSum(s, BITree))) + "\n");
+                        bw.write((FenwickTree.getSum(e, BITree).subtract(FenwickTree.getSum(s-1, BITree))) + "\n");
                     break;
                 case 3:
                     hashtable.put(index, BITree.clone());
