@@ -6,6 +6,8 @@ import java.util.Hashtable;
 
 public class Contest_Day {
 
+    private static Hashtable<Integer,Integer> resolveFrom = new Hashtable<>();
+
     static class FenwickTree{
 
         public static long getSum(int index,long[] BITree){
@@ -53,7 +55,7 @@ public class Contest_Day {
         input = br.readLine().split(" ");
         for (int i = 0; i < N; i++)
             arr[i] = Integer.parseInt(input[i]);
-        Hashtable<Integer, long[]> hashtable = new Hashtable<>();
+        Hashtable<Integer, Hashtable<Integer,Long>> hashtable = new Hashtable<>();
         hashtable.put(1,FenwickTree.constructBITree(arr));
         int index = 2;
         for(int i = 0 ; i < Q ; i++){
