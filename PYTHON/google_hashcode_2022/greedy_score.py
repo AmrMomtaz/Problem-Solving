@@ -1,4 +1,4 @@
-INPUT_FILENAME = 'a_an_example.in.txt'
+INPUT_FILENAME = 'b_better_start_small.in.txt'
 OUTPUT_FILENAME = INPUT_FILENAME[0] + '_out.txt'
 skills = dict() #Dictionaries containing the skills available and their level in tuples
 projects = list() #List contains the projects in tuples
@@ -47,14 +47,27 @@ score_sorted = [(score,deadline,days,roles,project) for (project,days,score,dead
 score_sorted.sort(reverse = True)
 
 fw = open(OUTPUT_FILENAME,'w')
-fw.write(str(len(projects))+ '\n')
+project_trials = list()
 for project in score_sorted:
-    fw.write(project[4]+'\n')
+    project_trial = ''
+    project_trial += project[4]+'\n'
+    done = False
     for role in project[3]:
         lst = skills.get(role[0])
+        done = False
         for skill in lst:
             if skill[0]>=role[1]:
-                fw.write(skill[1] + ' ')
+                project_trial+= skill[1] + ' '
+                done = True
                 break
-    fw.write('\n')
+        if not done:
+            break
+    if not done:
+        continue
+    else:
+        project_trial += '\n'
+        project_trials.append(project_trial)
+fw.write(str(len(project_trials)) + "\n")
+for trail in project_trials:
+    fw.write(trail)
 fw.close()
