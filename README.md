@@ -20,6 +20,7 @@ Problem C (Beautiful Numbers):
 ### Solving google kick start practice session (<a href = "https://codingcompetitions.withgoogle.com/kickstart/round/00000000008f4332">Link</a>):<br>
 Sample problem : <a href = "https://github.com/AmrMomtaz/Problem-Solving/blob/main/PYTHON/google_practice_kickstart_2022/Sample_Problem.py">Solution link </a><br>
 Centauri Prime : <a href = "https://github.com/AmrMomtaz/Problem-Solving/blob/main/PYTHON/google_practice_kickstart_2022/Centauri_Prime.py">Solution link </a><br>
-Milk Tea : <a href = "https://github.com/AmrMomtaz/Problem-Solving/blob/main/JAVA/src/google_practice_kickstart_2022/Milk_Tea.java">Solution link </a><br>
+H Index : <a href = "https://github.com/AmrMomtaz/Problem-Solving/blob/main/JAVA/google_practice_kickstart_2022/H_Index.java">Solution link </a><br>
+Milk Tea : <a href = "https://github.com/AmrMomtaz/Problem-Solving/blob/main/JAVA/google_practice_kickstart_2022/Milk_Tea.java">Solution link </a><br>
 
 
