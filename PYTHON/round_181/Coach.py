@@ -17,13 +17,14 @@ for i in range(constraints):
             set2 = group
         if set1 is not None and set2 is not None:
             break
+    if set1 == set2:
+        continue
     sets.remove(set1)
-    if set1!= set2:
-        sets.remove(set2)
+    sets.remove(set2)
     sets.append(set1.union(set2))
 sets.sort(key= len,reverse=True)
-groupsOfTwo = list()
 groupsOfOne = list()
+groupsOfTwo = list()
 for i in range(len(sets)):
     if len(sets[i])>3:
         print('-1')
@@ -44,7 +45,7 @@ elif len(groupsOfOne) > len(groupsOfTwo) and (len(groupsOfOne)-len(groupsOfTwo))
         print(' '.join(str(overallSet)[1:-1].split(', ')))
     index = len(groupsOfTwo)
     while len(groupsOfOne) > index:
-        print(f'{str(groupsOfOne[index])[1:-1]} {str(groupsOfOne[index+1])[1:-1]} {str(groupsOfOne[index+2])[1:-1]}')
+        print(f'{str(groupsOfOne[index])[1:-1]} {str(groupsOfOne[index+1])[1:-1]} {str(groupsOfOne[index+2])[1:-1]}',end='\n')
         index+=3
 else:
     print('-1')
