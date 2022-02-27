@@ -30,22 +30,26 @@ for i in range(len(sets)):
         print('-1')
         exit()
     elif len(sets[i]) == 3:
-        print(' '.join(str(sets[i])[1:-1].split(', ')))
+        for element in sets[i]:
+            print(str(element) + ' ' , end='')
+        print('\n',end='')
     elif len(sets[i]) == 2:
         groupsOfTwo.append(sets[i])
     elif len(sets[i]) == 1:
         groupsOfOne.append(sets[i])
 if len(groupsOfOne) == len(groupsOfTwo):
     for i in range(len(groupsOfOne)):
+        overallSet = None
         overallSet = groupsOfOne[i].union(groupsOfTwo[i])
-        print(' '.join(str(overallSet)[1:-1].split(', ')))
-elif len(groupsOfOne) > len(groupsOfTwo) and (len(groupsOfOne)-len(groupsOfTwo))%3==0:
-    for i in range(len(groupsOfTwo)):
-        overallSet = groupsOfOne[i].union(groupsOfTwo[i])
-        print(' '.join(str(overallSet)[1:-1].split(', ')))
-    index = len(groupsOfTwo)
-    while len(groupsOfOne) > index:
-        print(f'{str(groupsOfOne[index])[1:-1]} {str(groupsOfOne[index+1])[1:-1]} {str(groupsOfOne[index+2])[1:-1]}',end='\n')
-        index+=3
+        for element in overallSet:
+            print(str(element) + ' ', end='')
+        print('\n', end='')
+elif len(groupsOfOne) > len(groupsOfTwo):
+    while len(groupsOfTwo)>0:
+        overallSet = groupsOfOne.pop().union(groupsOfTwo.pop())
+        for element in overallSet:
+            print(str(element) + ' ', end='')
+    while len(groupsOfOne)>0:
+        
 else:
     print('-1')
