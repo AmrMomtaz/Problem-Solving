@@ -12,6 +12,7 @@ Problem B ():
 Problem A (Array): 
 <a href = "https://codeforces.com/contest/300/problem/A">Problem Link</a> || 
 <a href = "https://github.com/AmrMomtaz/Problem-Solving/blob/main/JAVA/round_181/Array.java">Solution Link</a><br>
+Problem B (Coach):<br>
 Problem C (Beautiful Numbers): 
 <a href = "https://codeforces.com/contest/300/problem/C">Problem Link</a> || 
 <a href = "https://github.com/AmrMomtaz/Problem-Solving/blob/main/JAVA/round_181/Beautiful_Numbers.java">Solution Link</a><br>
