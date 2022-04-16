@@ -8,13 +8,13 @@ Problem A (Gold playing with digits):
 <a href = "https://github.com/AmrMomtaz/Problem-Solving/blob/main/PYTHON/brinmore_2021/Gold_playing_with_digits.py">Solution Link</a><br>
 Problem B (Cat Assignment!):
 <a href = "https://codeforces.com/gym/349178/problem/A">Problem Link</a> || 
-<a href = "https://github.com/AmrMomtaz/Problem-Solving/blob/main/PYTHON/brinmore_2021/Gold_playing_with_digits.py">Solution Link</a><br><br>
+<a href = "https://github.com/AmrMomtaz/Problem-Solving/blob/main/PYTHON/brinmore_2021/Gold_playing_with_digits.py">Solution Link</a><br>
 Problem C (Holiday):
 <a href = "https://codeforces.com/gym/349178/problem/A">Problem Link</a> || 
-<a href = "https://github.com/AmrMomtaz/Problem-Solving/blob/main/PYTHON/brinmore_2021/Gold_playing_with_digits.py">Solution Link</a><br><br>
+<a href = "https://github.com/AmrMomtaz/Problem-Solving/blob/main/PYTHON/brinmore_2021/Gold_playing_with_digits.py">Solution Link</a><br>
 Problem E (Brimore):
 <a href = "https://codeforces.com/gym/349178/problem/A">Problem Link</a> || 
-<a href = "https://github.com/AmrMomtaz/Problem-Solving/blob/main/PYTHON/brinmore_2021/Gold_playing_with_digits.py">Solution Link</a><br><br>
+<a href = "https://github.com/AmrMomtaz/Problem-Solving/blob/main/PYTHON/brinmore_2021/Gold_playing_with_digits.py">Solution Link</a><br>
 
 ### Solving Codeforces Round #181 (Div. 2) (<a href = "https://codeforces.com/contest/300">Link</a>):<br>
 Problem A (Array): 
