@@ -4,7 +4,7 @@ Please note for java solutions remove the pacakge (first line) and change the cl
 
 ### Solving brimore round 2 contest (<a href = "https://codeforces.com/gym/349178">Link</a>):<br>
 Problem A (Gold playing with digits): 
-<a href = "https://codeforces.com/gym/349178/problem/A" target="blank" >Problem Link</a> || 
+<a href = "https://codeforces.com/gym/349178/problem/A" target="_blank">Problem Link</a> || 
 <a href = "https://github.com/AmrMomtaz/Problem-Solving/blob/main/PYTHON/brinmore_2021/Gold_playing_with_digits.py">Solution Link</a><br>
 Problem B (Cat Assignment!):
 <a href = "https://codeforces.com/gym/349178/problem/B">Problem Link</a> || 
