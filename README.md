@@ -2,6 +2,12 @@
 
 Please note for java solutions remove the pacakge (first line) and change the class name to Solution
 
+### Hackerrank 1 week interview preparation kit
+
+Jesse And Cookies : 
+<a href = "https://www.hackerrank.com/challenges/one-week-preparation-kit-jesse-and-cookies/problem?isFullScreen=true&h_l=interview&playlist_slugs%5B%5D=preparation-kits&playlist_slugs%5B%5D=one-week-preparation-kit&playlist_slugs%5B%5D=one-week-day-six">Problem Link</a> || 
+<a href = "https://github.com/AmrMomtaz/Problem-Solving/blob/main/PYTHON/brinmore_2021/Gold_playing_with_digits.py">Solution Link</a><br>
+
 ### Solving brimore round 2 contest (<a href = "https://codeforces.com/gym/349178">Link</a>):<br>
 Problem A (Gold playing with digits): 
 <a href = "https://codeforces.com/gym/349178/problem/A">Problem Link</a> || 
