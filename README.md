@@ -4,9 +4,22 @@ Please note for java solutions remove the pacakge (first line) and change the cl
 
 ### Hackerrank 1 week interview preparation kit
 
+Time Conversion : 
+<a href = "https://www.hackerrank.com/challenges/one-week-preparation-kit-time-conversion/problem?isFullScreen=true&h_l=interview&playlist_slugs%5B%5D=preparation-kits&playlist_slugs%5B%5D=one-week-preparation-kit&playlist_slugs%5B%5D=one-week-day-one">Problem Link</a> || 
+<a href = "https://github.com/AmrMomtaz/Problem-Solving/blob/main/PYTHON/hackerrank/week_preperation/TimeConversion.py">Solution Link</a><br>
 Jesse And Cookies : 
 <a href = "https://www.hackerrank.com/challenges/one-week-preparation-kit-jesse-and-cookies/problem?isFullScreen=true&h_l=interview&playlist_slugs%5B%5D=preparation-kits&playlist_slugs%5B%5D=one-week-preparation-kit&playlist_slugs%5B%5D=one-week-day-six">Problem Link</a> || 
-<a href = "https://github.com/AmrMomtaz/Problem-Solving/blob/main/PYTHON/brinmore_2021/Gold_playing_with_digits.py">Solution Link</a><br>
+<a href = "https://github.com/AmrMomtaz/Problem-Solving/blob/main/JAVA/hackerrank/week_preperation/JesseAndCookies.java">Solution Link</a><br>
+
+### Google Kick Start 2022
+
+Infinity Area : 
+<a href = "https://codingcompetitions.withgoogle.com/kickstart/round/00000000008caa74/0000000000acf079">Problem Link</a> || 
+<a href = "https://github.com/AmrMomtaz/Problem-Solving/blob/main/JAVA/google_kick_start/roundB/InfinityArea.java">Solution Link</a><br>
+Palindromic Factors : 
+<a href = "https://codingcompetitions.withgoogle.com/kickstart/round/00000000008caa74/0000000000acee89">Problem Link</a> || 
+<a href = "https://github.com/AmrMomtaz/Problem-Solving/blob/main/JAVA/google_kick_start/roundB/PalindromicFactors.java">Solution Link</a><br>
+
 
 ### Solving brimore round 2 contest (<a href = "https://codeforces.com/gym/349178">Link</a>):<br>
 Problem A (Gold playing with digits): 
