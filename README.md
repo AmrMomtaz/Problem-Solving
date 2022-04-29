@@ -7,6 +7,12 @@ Please note for java solutions remove the pacakge (first line) and change the cl
 Time Conversion : 
 <a href = "https://www.hackerrank.com/challenges/one-week-preparation-kit-time-conversion/problem?isFullScreen=true&h_l=interview&playlist_slugs%5B%5D=preparation-kits&playlist_slugs%5B%5D=one-week-preparation-kit&playlist_slugs%5B%5D=one-week-day-one">Problem Link</a> || 
 <a href = "https://github.com/AmrMomtaz/Problem-Solving/blob/main/PYTHON/hackerrank/week_preperation/TimeConversion.py">Solution Link</a><br>
+Flipping the Matrix : 
+<a href = "https://www.hackerrank.com/challenges/flipping-the-matrix/problem">Problem Link</a> || 
+<a href = "https://github.com/AmrMomtaz/Problem-Solving/blob/main/PYTHON/hackerrank/week_preperation/FlippingTheMatrix.py">Solution Link</a><br>
+Tower Breakers : 
+<a href = "https://www.hackerrank.com/challenges/one-week-preparation-kit-tower-breakers-1/problem?isFullScreen=true&h_l=interview&playlist_slugs%5B%5D=preparation-kits&playlist_slugs%5B%5D=one-week-preparation-kit&playlist_slugs%5B%5D=one-week-day-three">Problem Link</a> || 
+<a href = "https://github.com/AmrMomtaz/Problem-Solving/blob/main/PYTHON/hackerrank/week_preperation/TowerBreakers.py">Solution Link</a><br>
 Jesse And Cookies : 
 <a href = "https://www.hackerrank.com/challenges/one-week-preparation-kit-jesse-and-cookies/problem?isFullScreen=true&h_l=interview&playlist_slugs%5B%5D=preparation-kits&playlist_slugs%5B%5D=one-week-preparation-kit&playlist_slugs%5B%5D=one-week-day-six">Problem Link</a> || 
 <a href = "https://github.com/AmrMomtaz/Problem-Solving/blob/main/JAVA/hackerrank/week_preperation/JesseAndCookies.java">Solution Link</a><br>
