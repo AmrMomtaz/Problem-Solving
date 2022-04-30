@@ -13,6 +13,12 @@ Flipping the Matrix :
 Tower Breakers : 
 <a href = "https://www.hackerrank.com/challenges/one-week-preparation-kit-tower-breakers-1/problem?isFullScreen=true&h_l=interview&playlist_slugs%5B%5D=preparation-kits&playlist_slugs%5B%5D=one-week-preparation-kit&playlist_slugs%5B%5D=one-week-day-three">Problem Link</a> || 
 <a href = "https://github.com/AmrMomtaz/Problem-Solving/blob/main/PYTHON/hackerrank/week_preperation/TowerBreakers.py">Solution Link</a><br>
+Caesar Cipher : 
+<a href = "https://www.hackerrank.com/challenges/one-week-preparation-kit-caesar-cipher-1/problem?isFullScreen=true&h_l=interview&playlist_slugs%5B%5D=preparation-kits&playlist_slugs%5B%5D=one-week-preparation-kit&playlist_slugs%5B%5D=one-week-day-three">Problem Link</a> || 
+<a href = "https://github.com/AmrMomtaz/Problem-Solving/blob/main/C%2B%2B/hackerrank/CaesarCipher.cpp">Solution Link</a><br>
+Palindrome Index : 
+<a href = "https://www.hackerrank.com/challenges/palindrome-index/problem">Problem Link</a> || 
+<a href = "https://github.com/AmrMomtaz/Problem-Solving/blob/main/C%2B%2B/hackerrank/PalindromIndex.cpp">Solution Link</a><br>
 Jesse And Cookies : 
 <a href = "https://www.hackerrank.com/challenges/one-week-preparation-kit-jesse-and-cookies/problem?isFullScreen=true&h_l=interview&playlist_slugs%5B%5D=preparation-kits&playlist_slugs%5B%5D=one-week-preparation-kit&playlist_slugs%5B%5D=one-week-day-six">Problem Link</a> || 
 <a href = "https://github.com/AmrMomtaz/Problem-Solving/blob/main/JAVA/hackerrank/week_preperation/JesseAndCookies.java">Solution Link</a><br>
