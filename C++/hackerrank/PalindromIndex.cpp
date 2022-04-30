@@ -23,10 +23,16 @@ int palindromeIndex(string s) {
     int left = 0 , right = s.length() -1;
     while(left<right){
         if(s[left]!= s[right]){
-            if(s[left+1] == s[right])
-                return left;
-            else
-                return right;
+            // Checking condition
+            int new_left = left+1;
+            int new_right = right;
+            while(new_left<new_right){
+                if(s[new_left] != s[new_right])
+                    return right;
+                new_left++;
+                new_right--;
+            }
+            return left;
         }
         left++;
         right--;
