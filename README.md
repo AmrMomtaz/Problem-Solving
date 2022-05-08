@@ -19,6 +19,12 @@ Caesar Cipher :
 Palindrome Index : 
 <a href = "https://www.hackerrank.com/challenges/palindrome-index/problem">Problem Link</a> || 
 <a href = "https://github.com/AmrMomtaz/Problem-Solving/blob/main/C%2B%2B/hackerrank/PalindromIndex.cpp">Solution Link</a><br>
+New Year Chaos : 
+<a href = "https://www.hackerrank.com/challenges/one-week-preparation-kit-new-year-chaos/problem?isFullScreen=true&h_l=interview&playlist_slugs%5B%5D=preparation-kits&playlist_slugs%5B%5D=one-week-preparation-kit&playlist_slugs%5B%5D=one-week-day-four">Problem Link</a> || 
+<a href = "https://github.com/AmrMomtaz/Problem-Solving/blob/main/C%2B%2B/hackerrank/NewYearChaos.cpp">Solution Link</a><br>
+Merge two sorted linked lists : 
+<a href = "https://www.hackerrank.com/challenges/one-week-preparation-kit-merge-two-sorted-linked-lists/problem?isFullScreen=true&h_l=interview&playlist_slugs%5B%5D=preparation-kits&playlist_slugs%5B%5D=one-week-preparation-kit&playlist_slugs%5B%5D=one-week-day-five">Problem Link</a> || 
+<a href = "https://github.com/AmrMomtaz/Problem-Solving/blob/main/C%2B%2B/hackerrank/MergeTwoSortedLists.cpp">Solution Link</a><br>
 Jesse And Cookies : 
 <a href = "https://www.hackerrank.com/challenges/one-week-preparation-kit-jesse-and-cookies/problem?isFullScreen=true&h_l=interview&playlist_slugs%5B%5D=preparation-kits&playlist_slugs%5B%5D=one-week-preparation-kit&playlist_slugs%5B%5D=one-week-day-six">Problem Link</a> || 
 <a href = "https://github.com/AmrMomtaz/Problem-Solving/blob/main/JAVA/hackerrank/week_preperation/JesseAndCookies.java">Solution Link</a><br>
